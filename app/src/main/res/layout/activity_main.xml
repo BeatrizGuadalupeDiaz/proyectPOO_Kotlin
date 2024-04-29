@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title_agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ordenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordenador"
+        app:layout_constraintBottom_toTopOf="@+id/et_marca_ordenador"
+        app:layout_constraintEnd_toStartOf="@id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_agregar"/>
+
+    <EditText
+        android:id="@+id/et_marca_ordenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/line1"
+        app:layout_constraintTop_toBottomOf="@id/tv_ordenador"
+        />
+
+    <EditText
+        android:id="@+id/et_modelo_ordenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_marca_ordenador"
+        app:layout_constraintEnd_toEndOf="@id/line1"
+        />
+    <EditText
+        android:id="@+id/et_cpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="CPU"
+        app:layout_constraintEnd_toStartOf="@id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_modelo_ordenador"
+        />
+    <EditText
+        android:id="@+id/et_ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ram"
+        app:layout_constraintEnd_toStartOf="@id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cpu"
+        />
+    <Button
+        android:id="@+id/btn_add_ordenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="@id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ram" />
+
+    <TextView
+        android:id="@+id/tv_tableta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tableta"
+        app:layout_constraintEnd_toStartOf="@id/line2"
+        app:layout_constraintStart_toEndOf="@id/line1"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_agregar"
+        />
+    <EditText
+        android:id="@+id/et_marca_tableta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        app:layout_constraintEnd_toStartOf="@id/line2"
+        app:layout_constraintStart_toEndOf="@id/line1"
+        app:layout_constraintTop_toBottomOf="@id/tv_tableta"
+        />
+    <EditText
+        android:id="@+id/et_modelo_tableta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        app:layout_constraintEnd_toStartOf="@id/line2"
+        app:layout_constraintStart_toEndOf="@id/line1"
+        app:layout_constraintTop_toBottomOf="@id/et_marca_tableta"
+        />
+    <EditText
+        android:id="@+id/et_pantalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Pantalla"
+        app:layout_constraintTop_toBottomOf="@id/et_modelo_tableta"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_tableta"
+        app:layout_constraintEnd_toStartOf="@id/line2"
+        app:layout_constraintStart_toEndOf="@id/line1"
+        />
+
+    <Button
+        android:id="@+id/btn_add_tableta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="@id/line2"
+        app:layout_constraintStart_toStartOf="@id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/et_pantalla" />
+
+    <TextView
+        android:id="@+id/tv_smartphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smartphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/line2"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_agregar" />
+    <EditText
+        android:id="@+id/et_marca_smartphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        app:layout_constraintTop_toBottomOf="@id/tv_smartphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/line2"
+        />
+    <EditText
+        android:id="@+id/et_modelo_smartphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        app:layout_constraintTop_toBottomOf="@id/et_marca_smartphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/line2"
+        />
+    <EditText
+        android:id="@+id/et_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Dual-Sim"
+        app:layout_constraintStart_toStartOf="@id/line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_modelo_smartphone"
+        />
+    <Button
+        android:id="@+id/btn_add_smartphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        app:layout_constraintStart_toStartOf="@id/line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sim"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="136dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.66"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"
+        />
+<Button
+    android:id="@+id/btn_mostrar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mostrar Productos"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/line3"
+
+    />
+
+    <TextView
+        android:id="@+id/meustra"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="dispositivos"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mostrar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        />
+
+    <TextView
+        android:id="@+id/tv_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line4"
+        app:layout_constraintBottom_toTopOf="@id/et_buscar_modelo"
+        />
+
+<EditText
+    android:id="@+id/et_buscar_modelo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Modelo"
+    app:layout_constraintStart_toEndOf="@id/et_buscar_marca"
+    app:layout_constraintTop_toBottomOf="@id/tv_buscar"
+    app:layout_constraintEnd_toEndOf="@id/btn_buscar"
+    />
+    <EditText
+        android:id="@+id/et_buscar_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_buscar"
+        app:layout_constraintEnd_toStartOf="@id/et_buscar_modelo"
+        />
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        app:layout_constraintStart_toEndOf="@id/et_buscar_modelo"
+        app:layout_constraintTop_toBottomOf="@id/tv_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_buscar_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_buscar_modelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_cambiar_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Estado"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_buscar_estado"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
